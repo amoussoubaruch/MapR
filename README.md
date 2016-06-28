@@ -49,10 +49,35 @@ $ gcloud components list # Afficher toutes les composantes de gcloud
 > Installation Java 8
 
 ```sh
-$ yum install java-1.7.0-openjdk-devel
+$ yum install java-1.7.0-openjdk-devel  # Java 7
+$ yum install java-1.8.0-openjdk        # Java 8
 ```
 
 > Créer des comptes d'utilisateurs sur toutes les machines 
+
+> Configuration SSH 
+
+1. Set Up Passwordless SSH
+
+> A réaliser sur tous les noeuds 
+
+```sh
+$ passwd root                                   # Changer le mot de passe root (Suivre les instructions pour changer le mot de passe)
+$ cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak   # Copy the /etc/ssh/sshd_config file to sshd_config.bak 
+$ vi /etc/ssh/sshd_config                           # edit the file with this setting (PermitRootLogin yes PasswordAuthentication yes)
+$ sshd –t                                           # Save the file, and run this command 
+$ service sshd restart                              # Restart the sshd service
+```
+
+> Sur le master nome
+
+```sh
+$ ssh-keygen                                                               # Generate key RSA 
+$ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr2.c.mapr-1355.internal     # Copy key to node 1 
+$ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr3.c.mapr-1355.internal     # Copy key to node 2
+$ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr4.c.mapr-1355.internal     # Copy key to node 3
+```
+
 
 > Installer des packages supplémentaires 
 
@@ -61,16 +86,7 @@ $ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
 $ yum install telnet telnet-server -y   # Installer Telnet 
 ```
 
-> Configuration SSH 
 
-```sh
-$ 
-$
-$
-$
-$
-$
-```
 
 
 
