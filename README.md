@@ -29,7 +29,7 @@ $ cat /etc/*-release                 # Ou cette commande
 $ free -g                            # Display total and available memory in gigabytes 
 $ hostname -f                        # Hostname à utiliser dans le config 
 $ getent hosts `hostname`            # Return the node's IP address and fully-qualified domain name (FQDN)
-$ 
+$ telnet mapr1.c.mapr-1355.internal 9443  # Vérifier si un port est ouvert
 ```
 
 > Installation Gcloud
@@ -48,11 +48,13 @@ $ yum install java-1.7.0-openjdk-devel
 
 > Créer des comptes d'utilisateurs sur toutes les machines 
 
-> Installer des packages suppélementsires 
+> Installer des packages supplémentaires 
 
 ```sh
 $ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
 ```
+
+> Installer des packages supplémentaires  
 
 
 
