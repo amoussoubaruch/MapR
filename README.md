@@ -2,6 +2,11 @@
 MapR Installation in GCP
 
 1. Prerequis 
+2. > Passer en mode root
+
+```sh
+$ sudo -i 
+```
 
 > Installation Gcloud
 
@@ -11,10 +16,8 @@ $ exec -l $SHELL
 $ gcloud components list # Afficher toutes les composantes de gcloud
 ```
 
-> Passer en mode root
 
-```sh
-$ sudo -i 
-```
+
+
 
 
