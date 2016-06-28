@@ -35,7 +35,6 @@ $ hostname -f                        # Hostname à utiliser dans le config
 $ getent hosts `hostname`            # Return the node's IP address and fully-qualified domain name (FQDN)
 $ netstat -anp | grep 9443           # Vérifier si un port est ouvert
 $ lsblk                              # Lister les disques dans linux 
-$ yum install telnet telnet-server -y   # Installer Telnet 
 $ telnet mapr1.c.mapr-1355.internal 9443 # Vérifier si le port 9443 est ouvert (Notons que mapr1... est le nom avec fdqn du server)
 ```
 
@@ -59,6 +58,7 @@ $ yum install java-1.7.0-openjdk-devel
 
 ```sh
 $ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
+$ yum install telnet telnet-server -y   # Installer Telnet 
 ```
 
 > Configuration SSH 
