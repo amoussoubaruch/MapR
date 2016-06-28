@@ -8,6 +8,7 @@ MapR Installation in GCP
 ```sh
 $ curl https://sdk.cloud.google.com | bash
 $ exec -l $SHELL
+$ gcloud components list # Afficher toutes les composantes de gcloud
 ```
 
 > Passer en mode root
