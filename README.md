@@ -57,7 +57,7 @@ $ yum install java-1.8.0-openjdk        # Java 8
 
 > Configuration SSH 
 
-1. Set Up Passwordless SSH
+##### Set Up Passwordless SSH
 
 > A réaliser sur tous les noeuds 
 
@@ -69,6 +69,18 @@ $ sshd –t                                           # Save the file, and run t
 $ service sshd restart                              # Restart the sshd service
 ```
 
+> Installer des packages supplémentaires 
+
+```sh
+$ yum -y install python-pycurl 
+$ yum -y install nss 
+$ yum -y install openssh-clients 
+$ yum -y install openssl 
+$ yum -y install sshpass 
+$ yum -y install wget
+$ yum install telnet telnet-server -y   # Installer Telnet 
+```
+
 > Sur le master nome
 
 ```sh
@@ -78,13 +90,36 @@ $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr3.c.mapr-1355.internal     # Cop
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr4.c.mapr-1355.internal     # Copy key to node 3
 ```
 
+##### Prépare cluster installation : dans le cas du lab en cours 
 
-> Installer des packages supplémentaires 
+> 
 
 ```sh
-$ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
-$ yum install telnet telnet-server -y   # Installer Telnet 
+$ wget http://course-files.mapr.com/ADM2000/ADM200_Lab1.2.zip
+$ unzip ADM200_Lab1.2.zip
+$ ls labfiles
+$ rpm -i labfiles/clustershell-1.6-1.el6.noarch.rpm
+$ vi /etc/clustershell/groups    # Ajouter les pamarètres indiqués dans la doc
+$ clush -a date 
+$ clush -a --copy /root/labfiles
+$ clush -a ls -la /root/ | grep labfiles
+$ /root/labfiles/cluster-audit.sh | tee cluster-audit.log
+$ /root/labfiles/network-test.sh | tee network-test.log
+$ clush -Ba /root/labfiles/memory-test.sh | tee memory-test.log
+$ clush -ab /root/labfiles/disk-test.sh
+$ clush -ab /root/labfiles/disk-test.sh --destroy
 ```
+
+##### Installation de MapR 
+
+```sh
+$ wget http://package.mapr.com/releases/installer/mapr-setup.sh
+$ bash ./mapr-setup.sh
+$ 
+$
+$
+```
+
 
 
 
