@@ -12,6 +12,7 @@ MapR 5.1 Installation in GCP
 >  Do not use RAID
 >  Do not use LVM
 > Recommandation pour la capacité de stockage : si on dispose de 50Tb de données, tenir compte du facteur de réplication (Si le facteur de réplication est 3 alors prévoir une space de 150Tb plus 150tb *1.25 pour stocker les log, les données mapreduce et les fichiers temporaires ce qui fait 188TB à prévoir) 
+> https://github.com/MapRPS/cluster-validation # MapR tools used for pre-install and post-install tests
 
 1. Prerequis pour l'installation de MapR : Paramétrage à réaliser sur chaque noeud 
 
@@ -60,7 +61,16 @@ $ yum install java-1.7.0-openjdk-devel
 $ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
 ```
 
-> Installer des packages supplémentaires  
+> Configuration SSH 
+
+```sh
+$ 
+$
+$
+$
+$
+$
+```
 
 
 
