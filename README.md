@@ -1,8 +1,14 @@
 # MapR
 MapR Installation in GCP
 
+### Logiciels déja installé 
+
+> Python 2.6
+> 
+
 1. Prerequis 
-2. > Passer en mode root
+
+> Passer en mode root
 
 ```sh
 $ sudo -i 
@@ -16,6 +22,11 @@ $ exec -l $SHELL
 $ gcloud components list # Afficher toutes les composantes de gcloud
 ```
 
+> Installation Java 8
+
+```sh
+$ 
+```
 
 
 
