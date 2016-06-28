@@ -1,5 +1,5 @@
 # MapR
-MapR Installation in GCP
+MapR 5.1 Installation in GCP
 
 ### Logiciels déja installé dans GCP 
 
@@ -10,7 +10,7 @@ MapR Installation in GCP
 
 > Chaque utilisateur du cluster doit avoir un compte sur chaque noeud 
 
-1. Prerequis 
+1. Prerequis pour l'installation de MapR : Paramétrage à réaliser sur chaque noeud 
 
 > Passer en mode root
 
@@ -46,9 +46,16 @@ $ gcloud components list # Afficher toutes les composantes de gcloud
 $ yum install java-1.7.0-openjdk-devel
 ```
 
-> Mapr Pre requis installation et paramétrage à faire sur les noeuds 
+> Créer des comptes d'utilisateurs sur toutes les machines 
 
-1. Paramétrages tous les noeuds 
+> Installer des packages suppélementsires 
+
+```sh
+$ yum -y installpython-pycurl nss openssh-clients openssl sshpass wget
+```
+
+
+
 
 
 
