@@ -6,6 +6,10 @@ MapR Installation in GCP
 > Python 2.6
 > 
 
+### MapR info
+
+> Chaque utilisateur du cluster doit avoir un compte sur chaque noeud 
+
 1. Prerequis 
 
 > Passer en mode root
@@ -39,8 +43,13 @@ $ gcloud components list # Afficher toutes les composantes de gcloud
 > Installation Java 8
 
 ```sh
-$ 
+$ yum install java-1.7.0-openjdk-devel
 ```
+
+> Mapr Pre requis installation et paramétrage à faire sur les noeuds 
+
+1. Paramétrages tous les noeuds 
+
 
 
 
