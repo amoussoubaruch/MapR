@@ -41,6 +41,7 @@ $ getent hosts `hostname`            # Return the node's IP address and fully-qu
 $ netstat -anp | grep 9443           # Vérifier si un port est ouvert
 $ lsblk                              # Lister les disques dans linux 
 $ telnet mapr1.c.mapr-1355.internal 9443 # Vérifier si le port 9443 est ouvert (Notons que mapr1... est le nom avec fdqn du server)
+$ fdisk -l | grep dev                # Connaitre tous les disques de notre serveur
 ```
 
 > Installation Gcloud
@@ -126,10 +127,20 @@ $ clush -ab /root/labfiles/disk-test.sh --destroy
 ```sh
 $ wget http://package.mapr.com/releases/installer/mapr-setup.sh
 $ bash ./mapr-setup.sh
-$ 
-$
-$
 ```
+
+> L'image suivante s'affiche (Correspond à l'url de l'ihm ) img 0 
+
+> On obtient l'image suivante img 1
+
+> Check installation logs file
+
+```sh
+$ vi /opt/mapr/installer/logs
+```
+
+
+
 
 
 
