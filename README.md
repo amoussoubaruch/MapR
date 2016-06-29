@@ -51,6 +51,12 @@ $ exec -l $SHELL
 $ gcloud components list # Afficher toutes les composantes de gcloud
 ```
 
+> Update packages 
+
+```sh
+$ yum update
+```
+
 > Installation Java 8
 
 ```sh
@@ -88,7 +94,7 @@ $ yum install telnet telnet-server -y   # Installer Telnet
 > Sur le master node
 
 ```sh
-$ ssh-keygen                                                               # Generate key RSA 
+$ ssh-keygen                                                               # Generate key RSA  (/root/.ssh/id_rsa)
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr1.c.mapr-1355.internal
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr2.c.mapr-1355.internal     # Copy key to node 1 
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr3.c.mapr-1355.internal     # Copy key to node 2
