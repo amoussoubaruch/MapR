@@ -6,7 +6,7 @@ MapR 5.1 Installation in GCP
 > Python 2.6
 > 
 
-### MapR info
+### MapR information 
 
 > Chaque utilisateur du cluster doit avoir un compte sur chaque noeud 
 >  Do not use RAID
