@@ -21,6 +21,11 @@ MapR 5.1 Installation in GCP
 ```sh
 $ sudo -i 
 ```
+> Changer le mot de passe root (m^me mot de passe sur toutes les machines)
+
+```sh
+$ passwd      # Changer le mot de passe root (Suivre les instructions pour changer le mot de passe)
+```
 
 > Quelques commandes linux 
 
@@ -62,7 +67,6 @@ $ yum install java-1.8.0-openjdk        # Java 8
 > A réaliser sur tous les noeuds 
 
 ```sh
-$ passwd root                                    # Changer le mot de passe root (Suivre les instructions pour changer le mot de passe)
 $ cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak  # Copy the /etc/ssh/sshd_config file to sshd_config.bak 
 $ vi /etc/ssh/sshd_config                           # edit the file with this setting (PermitRootLogin yes PasswordAuthentication yes)
 $ /etc/init.d/sshd –t                               # Save the file, and run this command 
