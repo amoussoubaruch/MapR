@@ -81,7 +81,7 @@ $ yum -y install wget
 $ yum install telnet telnet-server -y   # Installer Telnet 
 ```
 
-> Sur le master nome
+> Sur le master node
 
 ```sh
 $ ssh-keygen                                                               # Generate key RSA 
