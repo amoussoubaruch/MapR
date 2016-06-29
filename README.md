@@ -85,6 +85,7 @@ $ yum install telnet telnet-server -y   # Installer Telnet
 
 ```sh
 $ ssh-keygen                                                               # Generate key RSA 
+$ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr1.c.mapr-1355.internal
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr2.c.mapr-1355.internal     # Copy key to node 1 
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr3.c.mapr-1355.internal     # Copy key to node 2
 $ ssh-copy-id -i /root/.ssh/id_rsa.pub root@mapr4.c.mapr-1355.internal     # Copy key to node 3
