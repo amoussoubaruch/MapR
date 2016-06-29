@@ -134,7 +134,7 @@ $ bash ./mapr-setup.sh
 > On obtient l'image suivante img 1
 
 > Check installation logs file
-
+ 
 ```sh
 $ vi /opt/mapr/installer/logs
 ```
