@@ -21,7 +21,7 @@ MapR 5.1 Installation in GCP
 ```sh
 $ sudo -i 
 ```
-> Changer le mot de passe root (m^me mot de passe sur toutes les machines) mot de passe : mapr
+> Changer le mot de passe root (mme mot de passe sur toutes les machines) mot de passe : mapr
 
 ```sh
 $ passwd      # Changer le mot de passe root (Suivre les instructions pour changer le mot de passe)
