@@ -145,7 +145,7 @@ $ bash ./mapr-setup.sh
 $ vi /opt/mapr/installer/logs
 ```
 
-
+> 
 
 
 
