@@ -65,6 +65,12 @@ $ yum install java-1.7.0-openjdk-devel  # Java 7
 $ yum install java-1.8.0-openjdk        # Java 8
 ```
 
+> Partitionnement de disks
+
+```sh
+$ fdisk /dev/sda        # Info pour le partitionnement à creuser
+```
+
 > Créer des comptes d'utilisateurs sur toutes les machines 
 
 > Configuration SSH 
