@@ -150,7 +150,9 @@ $ vi /opt/mapr/installer/logs
 
 ```sh
 $ sudo rm -r /opt/mapr/
-$  sudo yum remove mapr-installer
+$ sudo yum remove mapr-installer
+$ sudo /opt/mapr/adminuiapp/webserver stop
+$ sudo /opt/mapr/adminuiapp/webserver start
 ```
 
 
