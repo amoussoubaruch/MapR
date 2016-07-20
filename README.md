@@ -146,7 +146,12 @@ $ bash ./mapr-setup.sh
 $ vi /opt/mapr/installer/logs
 ```
 
-> 
+> Reprendre un installation 
+
+```sh
+$ sudo rm -r /opt/mapr/
+$  sudo yum remove mapr-installer
+```
 
 
 
