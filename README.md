@@ -153,6 +153,7 @@ $ sudo rm -r /opt/mapr/
 $ sudo yum remove mapr-installer
 $ sudo /opt/mapr/adminuiapp/webserver stop
 $ sudo /opt/mapr/adminuiapp/webserver start
+$ vi /opt/mapr/adminuiapp/webserver         # Configure shell to force in english
 ```
 
 
