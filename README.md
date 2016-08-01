@@ -43,6 +43,7 @@ $ lsblk                              # Lister les disques dans linux
 $ telnet mapr1.c.mapr-1355.internal 9443 # Vérifier si le port 9443 est ouvert (Notons que mapr1... est le nom avec fdqn du server)
 $ fdisk -l | grep dev                # Connaitre tous les disques de notre serveur
 $ gunzip file.gz                     # unzipe file.gz
+$ ls -l /dev                         # Afficher tous les devices (périphériques de la machine) 
 ```
 
 > Installation Gcloud
