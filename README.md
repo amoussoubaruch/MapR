@@ -157,7 +157,7 @@ $ sudo yum remove mapr-installer
 > if you have problem to log in MCS IHM do yhos commands to master node shell
 
 ```sh 
-$ vi /opt/mapr/adminuiapp/webserver             # Configure shell to force in english
+$ vi /opt/mapr/adminuiapp/webserver             # Configure shell to force in english : https://community.mapr.com/thread/8892
 $ sudo /opt/mapr/adminuiapp/webserver stop
 $ sudo /opt/mapr/adminuiapp/webserver start
 ```
